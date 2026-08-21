@@ -47,3 +47,5 @@ Thumbs.db
 # IDE folders (if you also open in VS Code, etc.)
 .vscode/
 .vs/
+
+./build
