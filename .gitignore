@@ -1,54 +1,49 @@
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
+# Build directories
+build/
+build-*/
+*-build-*/
 
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
+# Qt Creator generated files
 *.pro.user
 *.pro.user.*
 *.qbs.user
 *.qbs.user.*
-*.moc
+.qtcreator/
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# qmake generated files
+Makefile
+Makefile.*
+*.qmake.stash
+object_script.*.release
+object_script.*.debug
+
+# Compiled binaries / object files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Qt auto-generated files
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
 ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
-*.qm
-*.prl
+*.moc
 
-# Qt unit tests
-target_wrapper.*
+# Debug/release output folders
+debug/
+release/
 
-# QtCreator
-*.autosave
+# OS junk
+.DS_Store
+Thumbs.db
 
-# QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
-
-# QtCreator CMake
-CMakeLists.txt.user*
-
-# QtCreator 4.8< compilation database
-compile_commands.json
-
-# QtCreator local machine specific files for imported projects
-*creator.user*
-
-*_qmlcache.qrc
+# IDE folders (if you also open in VS Code, etc.)
+.vscode/
+.vs/
